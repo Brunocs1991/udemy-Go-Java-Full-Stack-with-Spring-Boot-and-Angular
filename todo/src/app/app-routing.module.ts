@@ -1,3 +1,4 @@
+import { ListTodosComponent } from './list-todos/list-todos.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'welcome/:name', component: WelcomeComponent },
+  { path: 'todos', component: ListTodosComponent },
   { path: 'error', component: ErrorComponent },
   { path: '**', redirectTo: 'error' },
 ];
