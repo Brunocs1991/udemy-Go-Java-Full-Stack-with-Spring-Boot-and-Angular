@@ -8,10 +8,26 @@ import { Todo } from '../models/Todo';
 })
 export class ListTodosComponent implements OnInit {
   todos: Todo[] = [
-    { id: 1, description: 'Learn to Dance' },
-    { id: 2, description: 'Become an Expert angular' },
-    { id: 3, description: 'Visit India' },
+    {
+      id: 1,
+      description: 'Learn to Dance',
+      done: false,
+      targetDate: new Date(),
+    },
+    {
+      id: 2,
+      description: 'Become an Expert angular',
+      done: false,
+      targetDate: new Date(),
+    },
+    {
+      id: 3,
+      description: 'Visit India',
+      done: false,
+      targetDate: new Date(),
+    },
   ];
+
   constructor() {}
 
   ngOnInit(): void {}
