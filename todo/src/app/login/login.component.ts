@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   handleLogin() {
     if ('in28minutes' === this.username && 'dummy' === this.password) {
       this.invalidLogin = false;
-      this.router.navigate(['welcome']);
+      this.router.navigate(['welcome', this.username]);
     }
     this.invalidLogin = true;
   }
